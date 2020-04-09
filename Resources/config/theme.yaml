@@ -1,0 +1,8 @@
+master:
+  page: "master.html.twig"
+  block:
+    positions:
+      main1: "block.html.twig"
+      main2: "block.html.twig"
+      main3: "block.html.twig"
+      main4: "block.html.twig"

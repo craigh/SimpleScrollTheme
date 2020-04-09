@@ -1,0 +1,11 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+        bind:
+            $extension: '@Craigh\SimpleScrollTheme\CraighSimpleScrollTheme'
+
+    Craigh\SimpleScrollTheme\:
+        resource: '../../*'
+        exclude: '../../{bootstrap.php,Tests,vendor}'

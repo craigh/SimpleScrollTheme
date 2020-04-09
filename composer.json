@@ -1,0 +1,44 @@
+{
+    "name": "craigh/simplescroll-theme",
+    "version": "1.0.0",
+    "description": "A very simple scrolling theme based on startbootstrap-resume v5.0.8.",
+    "type": "zikula-theme",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Craig Heydenburg",
+            "homepage": "https://github.com/craigh"
+        },
+        {
+            "name": "Start Bootstrap",
+            "homepage": "https://startbootstrap.com/template-overviews/resume"
+        },
+        {
+            "name": "David Miller",
+            "homepage": "http://davidmiller.io/"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "Craigh\\SimpleScrollTheme\\": "" }
+    },
+    "require": {
+        "php": ">=7.2.5"
+    },
+    "extra": {
+        "zikula" : {
+            "core-compatibility": ">=3.0.0",
+            "class": "Craigh\\SimpleScrollTheme\\CraighSimpleScrollTheme",
+            "displayname": "SimpleScroll Theme",
+            "icon": "fas fa-layer-group",
+            "url": "craighsimplescrolltheme",
+            "capabilities": {
+                "user": {
+                    "theme": true
+                },
+                "admin": {
+                    "theme": false
+                }
+            }
+        }
+    }
+}

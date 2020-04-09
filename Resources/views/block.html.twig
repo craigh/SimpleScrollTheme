@@ -1,0 +1,10 @@
+{% if title is not empty %}
+<h2 class="mb-5">{{ title }}</h2>
+{% endif %}
+<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+    <div class="resume-content">
+
+    {{ content|raw }}
+
+    </div>
+</div>
