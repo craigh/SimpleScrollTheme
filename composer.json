@@ -34,9 +34,6 @@
             "capabilities": {
                 "user": {
                     "theme": true
-                },
-                "admin": {
-                    "theme": false
                 }
             }
         }
