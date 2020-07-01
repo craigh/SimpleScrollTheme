@@ -11,3 +11,6 @@ home:
       main2: "block.html.twig"
       main3: "block.html.twig"
       main4: "block.html.twig"
+admin:
+  page: "admin.html.twig"
+bootstrapPath: 'themes/craighsimplescroll/css/resume.css'

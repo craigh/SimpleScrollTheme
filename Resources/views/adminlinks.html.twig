@@ -1,0 +1,8 @@
+<li class="nav-item">
+    {% if currentUser.loggedIn %}
+        {{ adminPanelMenu() }}
+        <a class="nav-link" href="{{ path('zikulausersmodule_access_logout') }}"><i class="fas fa-sign-out-alt"></i></a>
+    {% else %}
+        <a class="nav-link" href="{{ path('zikulausersmodule_access_login') }}"><i class="fas fa-key"></i></a>
+    {% endif %}
+</li>

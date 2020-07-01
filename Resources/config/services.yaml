@@ -9,3 +9,8 @@ services:
     Craigh\SimpleScrollTheme\:
         resource: '../../*'
         exclude: '../../{bootstrap.php,Tests,vendor}'
+
+    Craigh\SimpleScrollTheme\Menu\AdminMenu:
+        tags:
+            - { name: knp_menu.menu_builder, method: createAdminMenu, alias: simpleScrollThemeAdminMenu }
+

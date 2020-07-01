@@ -1,7 +1,7 @@
 {
     "name": "craigh/simplescroll-theme",
     "version": "1.0.0",
-    "description": "A very simple scrolling theme based on startbootstrap-resume v5.0.8.",
+    "description": "A very simple scrolling theme based on startbootstrap-resume v6.0.1.",
     "type": "zikula-theme",
     "license": "MIT",
     "authors": [
@@ -29,10 +29,13 @@
             "core-compatibility": ">=3.0.0",
             "class": "Craigh\\SimpleScrollTheme\\CraighSimpleScrollTheme",
             "displayname": "SimpleScroll Theme",
-            "icon": "fas fa-layer-group",
+            "icon": "fas fa-scroll",
             "url": "craighsimplescrolltheme",
             "capabilities": {
                 "user": {
+                    "theme": true
+                },
+                "admin": {
                     "theme": true
                 }
             }

@@ -1,0 +1,31 @@
+{% extends '@CraighSimpleScrollTheme/base.html.twig' %}
+
+{% block bodydeclaration %}<body class="admin-body">{% endblock %}
+
+{% block leftnav -%}{%- endblock %}
+
+{% block maincontent %}
+<div class="container-fluid p-1">
+    <div class="navbar fixed-top navbar-expand-md navbar-light bg-light px-5">
+        <a class="navbar-brand" href="{{ pagevars.homepath }}"><i class="fas fa-home"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#themeNavBarCollapse" aria-controls="themeNavBarCollapse" aria-expanded="false" aria-label="{% trans %}Toggle navigation{% endtrans %}">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="themeNavBarCollapse" class="navbar-collapse collapse">
+            <ul class="navbar-nav">
+                <li class="mr-2">{{ adminPanelMenu() }}</li>
+            </ul>
+            {{ knp_menu_render('simpleScrollThemeAdminMenu', {template: '@ZikulaMenuModule/Override/bootstrap_fontawesome.html.twig'}) }}
+            <a class="ml-auto" href="{{ path('zikulausersmodule_access_logout') }}"><i class="fas fa-sign-out-alt"></i> {% trans %}Logout{% endtrans %}</a>
+        </div>
+    </div>
+
+    <div class="z-admin-content clearfix mt-5">
+        <div class="py-4">{{ moduleHeader('admin', '', '', false, false, false, true) }}</div>
+
+        {{ showflashes() }}
+        {{ maincontent|raw }}
+    </div>
+
+</div>
+{% endblock %}

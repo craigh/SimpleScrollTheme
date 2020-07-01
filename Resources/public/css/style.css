@@ -1,0 +1,13 @@
+.mm-menu_offcanvas {
+  z-index: 1050; /* set the admin menu at a higher layer than the theme menu */
+}
+
+.mm-menu_offcanvas .mm-panels h2 {
+  font-size: 2rem;
+}
+
+@media (min-width: 992px) {
+  body.admin-body {
+    padding: 0 2rem;
+  }
+}
